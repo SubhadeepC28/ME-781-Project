@@ -14,3 +14,11 @@ This repository contains content for our course project **ME781: Statistical Mac
 > - Product User Manual
 > - Code for front-end interface
 > - Code for Neural Network implementation to find out _similarity index_
+
+### Project Team:
+> | Name | Roll |
+> | :---:   | :-: | 
+> | Subhadeep Chaudhuri | 19i190010 |
+> | Amey Bharat Gohil   | 170100019 | 
+> | Prakhar Nama        | 203370006 |
+> | Deepak Soman        | 174100018 |
