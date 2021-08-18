@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="github.com/AmeyGohil">
+    <link rel="image_src" href="http://smp.iitb.ac.in/static/img/thumbnail/thumbnail.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../assets/libraries/font-awesome/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/libraries/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/side-menu.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/result/result.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/backgrounds.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/dark-mode.css"/>
+
+</head>
+<body>
+
+<main>
+    <div class="overlay"></div>
+    <div id="main">
+        <nav  class="nav-header bg-fixed bg3">
+            <div class="nav-wrapper">
+                <a href="../result" class="brand-logo">
+                    <span class="logo">
+                        <span class="logo-letter">M</span><span class="logo-letter">L</span><span class="logo-letter">-</span><span class="logo-letter">b</span><span class="logo-letter">a</span><span class="logo-letter">s</span><span class="logo-letter">e</span><span class="logo-letter">d</span><span class="logo-letter">&nbsp;</span><span class="logo-letter">M</span><span class="logo-letter">a</span><span class="logo-letter">t</span><span class="logo-letter">c</span><span class="logo-letter">h</span><span class="logo-letter">m</span><span class="logo-letter">a</span><span class="logo-letter">k</span><span class="logo-letter">i</span><span class="logo-letter">n</span><span class="logo-letter">g</span>
+                    </span>
+                </a>
+                <ul class="right waves-effect menu">
+                    <li><div class="hamburger grey-text text-darken-4"><span></span></div></li>
+                </ul>
+            </div>
+        </nav>
+        <nav  class="sub-nav">
+            <div class="nav-wrapper">
+                <a href="../result" class="brand-logo">
+                    <span class="sub-heading">
+                        Results
+                    </span>
+                </a>
+            </div>
+        </nav>
+        <div class="section bg5">
+
+            <div class="row">
+                <div class="col s12">
+                    <h6>Following are the matches derived from our algorithm with the predicted score (out of 5) of satisfaction - </h6>
+                </div>
+                <form class="col s12">
+                    <div class="row" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                        <div class="col m6" style="margin: auto">
+
+                            <div class="section row" id="detail-form">
+                                <div class="collection">
+                                    <a href="#!" class="collection-item">
+                                        <span class="badge">
+                                            <i class="material-icons waves-effect tooltipped" data-position="top" data-tooltip="Chat with Mary Jane">message</i>
+                                        </span>
+                                        <span class="badge">Score - 4.7</span>
+                                        Mary Jane
+                                    </a>
+                                    <a href="#!" class="collection-item">
+                                        <span class="badge">
+                                            <i class="material-icons waves-effect tooltipped" data-position="top" data-tooltip="Chat with Maria Williams">message</i>
+                                        </span>
+                                        <span class="badge">Score - 4.5</span>
+                                        Maria Williams
+                                    </a>
+                                    <a href="#!" class="collection-item">
+                                        <span class="badge">
+                                            <i class="material-icons waves-effect tooltipped" data-position="top" data-tooltip="Chat with Juan Carlos">message</i>
+                                        </span>
+                                        <span class="badge">Score - 4.7</span>
+                                        Juan Carlos
+                                    </a>
+                                </div>
+                                <span class="helper-text red-text" style="display:none;" id="error"></span>
+                            </div>
+                        </div>
+                        <div class="col m12 s12">
+                            <div class="button_section section">
+                                <div class="button-container">
+                                    <a class="waves-effect waves-light btn blue accent-2 scale-transition scale-in" id="proceed" href = './'>Refresh<i class="fa fas fa-refresh right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="side-menu">
+        <div class="hamburger">
+            <svg class="ham ham2" viewBox="10 10 80 80" width="40" height="40">
+                <path class="line top" d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
+            </svg>
+        </div>
+        <div class="side-menu-items">
+            <div class="side-menu-div">
+                <ul>
+                    <li class="active"><a href="../result"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="#!"><i class="material-icons left">person</i>Profile</a></li>
+                    <!--                    <li><a href="#!" id="addGroup" data-target="addGroupModal" class="modal-trigger"><i class="material-icons left">group_add</i>Create Group</a></li>-->
+                    <!--                    <li><a href="../games"><i class="material-icons left">videogame_asset</i>Games</a></li>-->
+                    <li><a href="#!" onclick="toggleDarkMode()"><i class="material-icons left">brightness_4</i>DarkMode</a></li>
+                    <li><a href="#!" onclick="logout()"><i class="material-icons left">exit_to_app</i>LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="addGroupModal" class="modal">
+    <div class="modal-content">
+        <h4>Add Group</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="group_name" type="text" class="validate">
+                <label class="active" for="group_name">Group Name</label>
+                <span class="helper-text" data-error="Please enter a valid name" data-success="Valid &check;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="waves-effect btn-flat" id="addGroupSubmit">Add</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../assets/libraries/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/anime/anime.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/crypto/crypto-js.min.js"></script>
+<script type="text/javascript" src="../assets/js/side-menu.js"></script>
+<script type="text/javascript" src="../assets/js/logout.js"></script>
+<script type="text/javascript" src="../assets/js/dark-mode.js"></script>
+<script type="text/javascript" src="../assets/js/result/result.js"></script>
+
+</body>
+</html>
