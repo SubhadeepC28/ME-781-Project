@@ -2,6 +2,8 @@
 This repository contains content for our course project **ME781: Statistical Machine Learning & Data Mining**, offered in Autumn 2020 at IIT Bombay, instructed by Prof. Asim Tewari.
 
 ### Project Title: Machine Learning based Matchmaking
+![image](https://user-images.githubusercontent.com/67470059/129965194-17c2edbf-618a-4cff-a6b8-744790489d70.png)
+
 ### Project Description: 
 > Ideated a start-up delivering ML-based product (match-making for dating leveraging psychology) for B2C market. 
 > We build our product using the concept of [Big 5 personality traits](https://en.wikipedia.org/wiki/Big_Five_personality_traits) in human psychology, also known as the OCEAN traits. 
