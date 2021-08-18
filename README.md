@@ -18,10 +18,11 @@ This repository contains content for our course project **ME781: Statistical Mac
 > - [Code for Neural Network implementation to find out _similarity index_](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/tree/main/Python%20Code)
 
 ### Project Team:
-![image](https://user-images.githubusercontent.com/67470059/129966545-19b90792-545f-447d-bbae-e0151f610ffa.png)
 > | Name | Roll |
 > | :---:   | :-: | 
 > | Subhadeep Chaudhuri | 19i190010 | 
 > | Amey Bharat Gohil   | 170100019 | 
 > | Prakhar Nama        | 203370006 |
 > | Deepak Soman        | 174100018 |
+
+![image](https://user-images.githubusercontent.com/67470059/129966545-19b90792-545f-447d-bbae-e0151f610ffa.png)
