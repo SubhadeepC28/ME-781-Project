@@ -10,12 +10,12 @@ This repository contains content for our course project **ME781: Statistical Mac
 
 > The project report also includes a comprehensive literature review and market survey for potential competitors in the market (Tinder, Bumble to name a few). 
 ### Contents:
-> - Project Report
-> - Product Marketing video
-> - Product Brochure
-> - Product User Manual
-> - Code for front-end interface
-> - Code for Neural Network implementation to find out _similarity index_
+> - [Project Report](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME_781_Group_12_Project_Final_Report.pdf)
+> - [Product Marketing video](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME781_Group_12_Marketing_Video.mp4)
+> - [Product Brochure](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME_781_group12_brochure.pdf)
+> - [Product User Manual](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME781_Group_12_User_Manual.pdf)
+> - [Code for front-end interface]()
+> - [Code for Neural Network implementation to find out _similarity index_]()
 
 ### Project Team:
 ![image](https://user-images.githubusercontent.com/67470059/129966545-19b90792-545f-447d-bbae-e0151f610ffa.png)
