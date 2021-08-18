@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questionnaire</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="github.com/AmeyGohil">
+    <link rel="image_src" href="http://smp.iitb.ac.in/static/img/thumbnail/thumbnail.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../assets/libraries/font-awesome/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/libraries/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/side-menu.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/questionnaire/questionnaire.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/backgrounds.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/dark-mode.css"/>
+
+</head>
+<body>
+
+<main>
+    <div class="overlay"></div>
+    <div id="main">
+        <nav  class="nav-header bg-fixed bg3">
+            <div class="nav-wrapper">
+                <a href="../result" class="brand-logo">
+                    <span class="logo">
+                        <span class="logo-letter">M</span><span class="logo-letter">L</span><span class="logo-letter">-</span><span class="logo-letter">b</span><span class="logo-letter">a</span><span class="logo-letter">s</span><span class="logo-letter">e</span><span class="logo-letter">d</span><span class="logo-letter">&nbsp;</span><span class="logo-letter">M</span><span class="logo-letter">a</span><span class="logo-letter">t</span><span class="logo-letter">c</span><span class="logo-letter">h</span><span class="logo-letter">m</span><span class="logo-letter">a</span><span class="logo-letter">k</span><span class="logo-letter">i</span><span class="logo-letter">n</span><span class="logo-letter">g</span>
+                    </span>
+                </a>
+                <ul class="right waves-effect menu">
+                    <li><div class="hamburger grey-text text-darken-4"><span></span></div></li>
+                </ul>
+            </div>
+        </nav>
+        <nav  class="sub-nav" style="z-index: 7;">
+            <div class="nav-wrapper">
+                <a href="../result" class="brand-logo">
+                    <span class="sub-heading">
+                        Questionnaire
+                    </span>
+                </a>
+            </div>
+        </nav>
+        <div class="section bg5">
+
+            <div class="row">
+                <div class="col s12">
+                    <h5>Please answer the following to the best of your knowledge. Answer by choosing any number from 1 to 5 where -</h5>
+                    <div class="desc">
+                        <div class="desc_card">
+                            <div class="desc_num">1</div>
+                            <div class="desc_text">Disagree strongly</div>
+                        </div>
+                        <div class="desc_card">
+                            <div class="desc_num">2</div>
+                            <div class="desc_text">Disagree a little</div>
+                        </div>
+                        <div class="desc_card">
+                            <div class="desc_num">3</div>
+                            <div class="desc_text">Neutral</div>
+                        </div>
+                        <div class="desc_card">
+                            <div class="desc_num">4</div>
+                            <div class="desc_text">Agree a little</div>
+                        </div>
+                        <div class="desc_card">
+                            <div class="desc_num">5</div>
+                            <div class="desc_text">Agree strongly</div>
+                        </div>
+                    </div>
+                </div>
+                <form class="col s12" style="margin-top: 50px">
+                    <div class="row">
+                        <div class="col m12 s12">
+                            <h5 style="font-style: italic; ">I see myself as someone who - </h5>
+
+                            <div class="section row" id="questionnaire-form">
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>1) Is talkative</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q1" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>2) Tends to find fault with others</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q2" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>3) Does a thorough job</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q3" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>4) Is depressed, blue</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q4" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>5) Is original, comes up with new ideas</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q5" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>6) Is reserved</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q6" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>7) Is helpful and unselfish with others</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q7" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>8) Can be somewhat careless</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q8" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>9) Is relaxed, handles stress well</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q9" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>10) Is curious about many different things</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q10" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>11) Is full of energy</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q11" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>12) Starts quarrels with others</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q12" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>13) Is a reliable worker</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q13" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>14) Is ingenious, a deep thinker</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q14" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>15) Generates a lot of enthusiasm</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q15" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>16) Has a forgiving nature</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q16" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>17) Tends to be disorganized</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q17" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>18) Worries a lot</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q18" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>19) Has an active imagination</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q19" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>20) Tends to be quiet</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q20" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>21) Is generally trusting</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q21" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>22) Tends to be lazy</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q22" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>23) Is emotionally stable, not easily upset</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q23" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>24) Is inventive</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q24" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>25) Has an assertive personality</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q25" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>26) Can be cold and aloof</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q26" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>27) Perseveres until the task is finished</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q27" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>28) Can be moody</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q28" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>29) Values artistic, aesthetic experiences</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q29" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>30) Is sometimes shy, inhibited</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q30" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>31) Is considerate and kind to almost everyone</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q31" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>32) Does things efficiently</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q32" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>33) Remains calm in tense situations</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q33" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>34) Prefers work that is routine</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q34" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>35) Can be tense</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q35" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>36) Is outgoing, sociable</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q36" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>37) Is sometimes rude to others</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q37" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>38) Makes plans and follows through with them</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q38" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>39) Gets nervous easily</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q39" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>40) Likes to reflect, play with ideas</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q40" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>41) Has few artistic interests Self Report Measures for Love and Compassion Research: Personality</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q41" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>42) Likes to cooperate with others</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q42" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>43) Is easily distracted</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q43" min="1" max="5">
+                                    </p>
+                                </div>
+                                <div class="input-field col m12 s12 white z-depth-1">
+                                    <p>44) Is sophisticated in art, music, or literature</p>
+                                    <p class="range-field">
+                                        <input type="range" id="q44" min="1" max="5">
+                                    </p>
+                                </div>
+                                <span class="helper-text red-text" style="display:none;" id="error"></span>
+                            </div>
+                            <div class="section row" id="pass-form" style="display: none">
+                                <div class="input-field col s12 m12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <i id="eye" class="waves-effect fa fa-eye left postfix"></i>
+                                    <input id="password" type="password" class="validate" minlength="8">
+                                    <span class="helper-text" data-error="Password must be at least 8 characters long" data-success="Valid &check;"></span>
+                                    <label for="password">Password</label>
+                                </div>
+                                <span class="helper-text red-text" style="display:none;" id="pass-error"></span>
+                            </div>
+                        </div>
+                        <div class="col m12 s12">
+                            <div class="button_section section">
+                                <div class="button-container">
+                                    <a class="waves-effect waves-light btn blue accent-2 scale-transition scale-in" href="../result" id="edit">Submit Questionnaire<i class="fa fas fa-arrow-circle-right right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="side-menu">
+        <div class="hamburger">
+            <svg class="ham ham2" viewBox="10 10 80 80" width="40" height="40">
+                <path class="line top" d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
+            </svg>
+        </div>
+        <div class="side-menu-items">
+            <div class="side-menu-div">
+                <ul>
+                    <li><a href="../result"><i class="material-icons left">home</i>Home</a></li>
+                    <li class="active"><a href="#!"><i class="material-icons left">person</i>Profile</a></li>
+                    <!--                    <li><a href="#!" id="addGroup" data-target="addGroupModal" class="modal-trigger"><i class="material-icons left">group_add</i>Create Group</a></li>-->
+                    <!--                    <li><a href="../games"><i class="material-icons left">videogame_asset</i>Games</a></li>-->
+                    <li><a href="#!" onclick="toggleDarkMode()"><i class="material-icons left">brightness_4</i>DarkMode</a></li>
+                    <li><a href="#!" onclick="logout()"><i class="material-icons left">exit_to_app</i>LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="addGroupModal" class="modal">
+    <div class="modal-content">
+        <h4>Add Group</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="group_name" type="text" class="validate">
+                <label class="active" for="group_name">Group Name</label>
+                <span class="helper-text" data-error="Please enter a valid name" data-success="Valid &check;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="waves-effect btn-flat" id="addGroupSubmit">Add</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../assets/libraries/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/anime/anime.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/crypto/crypto-js.min.js"></script>
+<script type="text/javascript" src="../assets/js/side-menu.js"></script>
+<script type="text/javascript" src="../assets/js/logout.js"></script>
+<script type="text/javascript" src="../assets/js/dark-mode.js"></script>
+<script type="text/javascript" src="../assets/js/questionnaire/questionnaire.js"></script>
+
+</body>
+</html>
