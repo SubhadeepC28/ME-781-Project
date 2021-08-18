@@ -14,7 +14,7 @@ This repository contains content for our course project **ME781: Statistical Mac
 > - [Product Marketing video](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME781_Group_12_Marketing_Video.mp4)
 > - [Product Brochure](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME_781_group12_brochure.pdf)
 > - [Product User Manual](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/blob/main/Product%20Contents/ME781_Group_12_User_Manual.pdf)
-> - [Code for front-end interface]()
+> - [Code for front-end interface](https://github.com/SubhadeepC28/ME-781-Statistical-Machine-Learning-and-Data-Mining-Project/tree/main/Front%20End%20Interface)
 > - [Code for Neural Network implementation to find out _similarity index_]()
 
 ### Project Team:
