@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ML-based Matchmaking</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="github.com/AmeyGohil">
+    <link rel="image_src" href="http://smp.iitb.ac.in/static/img/thumbnail/thumbnail.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../assets/libraries/font-awesome/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/libraries/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/side-menu.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/chat/chat.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/backgrounds.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/dark-mode.css"/>
+
+</head>
+<body>
+
+<main>
+    <div class="overlay"></div>
+    <div id="main">
+        <nav  class="nav-header bg-fixed bg3">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo">
+                        <span class="logo-letter">L</span><span class="logo-letter">i</span><span class="logo-letter">v</span><span class="logo-letter">e</span><span class="logo-letter">&nbsp;</span><span class="logo-letter">C</span><span class="logo-letter">h</span><span class="logo-letter">a</span><span class="logo-letter">t</span>
+                    </span>
+                </a>
+            </div>
+        </nav>
+        <div class="chat-container">
+            <div class="chat-list">
+                <div class="">
+                    <div class="chat-tabs-container">
+                        <div class="chat-tabs">
+<!--                            <div id="active_tab" style="display: none">user</div>-->
+                            <div class="waves-effect waves-light chat-tab active" data-target="#users"><i class="material-icons">person</i>Users</div>
+                            <div class="waves-effect waves-light chat-tab" data-target="#groups"><i class="material-icons">people</i>Groups</div>
+                        </div>
+                    </div>
+                    <div id="users" class="chat-tab-div">
+                        <section class="chat-tab-list">
+                            <header>
+                                <input type='search' placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search" class="filter">
+                                <i class="material-icons">search</i>
+                            </header>
+                            <ul class="filter before">
+                                <div class="chat-list-loader scale-transition">
+                                    <div class='loader loader1'>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </section>
+                    </div>
+                    <div id="groups" class="chat-tab-div" style="display: none">
+                        <section class="chat-tab-list">
+                            <header>
+                                <input type='search' placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search" class="filter">
+                                <i class="material-icons">search</i>
+                            </header>
+                            <ul class="filter before"></ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-section">
+                <div class="chat-splash bg8">
+                    <div>
+                        <div class="chat-splash-img">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g><g><path d="M384,0H25.6C10.24,0,0,10.24,0,25.6v256c0,15.36,10.24,25.6,25.6,25.6h25.6v128l128-128H384c15.36,0,25.6-10.24,25.6-25.6 v-256C409.6,10.24,399.36,0,384,0z M102.4,179.2c-15.36,0-25.6-10.24-25.6-25.6c0-15.36,10.24-25.6,25.6-25.6 c15.36,0,25.6,10.24,25.6,25.6C128,168.96,117.76,179.2,102.4,179.2z M204.8,179.2c-15.36,0-25.6-10.24-25.6-25.6 c0-15.36,10.24-25.6,25.6-25.6c15.36,0,25.6,10.24,25.6,25.6C230.4,168.96,220.16,179.2,204.8,179.2z M307.2,179.2 c-15.36,0-25.6-10.24-25.6-25.6c0-15.36,10.24-25.6,25.6-25.6c15.36,0,25.6,10.24,25.6,25.6 C332.8,168.96,322.56,179.2,307.2,179.2z"/></g></g>
+                                <g><g><path d="M486.4,230.4h-25.6v102.4c0,15.36-10.24,25.6-25.6,25.6H204.8v51.2c0,15.36,10.24,25.6,25.6,25.6h128L460.8,512v-76.8 h25.6c12.8,0,25.6-10.24,25.6-25.6V256C512,243.2,499.2,230.4,486.4,230.4z"/></g></g>
+                                <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                            </svg>
+                        </div>
+                        <span class="chat-splash-text">Select any group or user to start the chat!</span>
+                    </div>
+                </div>
+                <div class="chat-loader" style="display: none">
+                    <div class="chat-list-loader scale-transition">
+                        <div class='loader loader1'>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-body">
+                    <div class="chat-header">
+                        <nav class="blue lighten-4">
+                            <div class="nav-wrapper chat-header-container">
+                                <a href="#!" id="chat-header" class="brand-logo left">Home !</a>
+                                <a href="#!" class="right waves-effect waves-light" style="display: none; padding: 0 20px; border-radius: 2000px" id="delete_group"><i class="material-icons">delete</i></a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="chat-div bg5">
+                        <div class="chat-thread">
+                        </div>
+                    </div>
+                    <div class="input-div">
+                        <form class="chat-window">
+                            <input class="chat-window-message" data-token="null" data-type="null" name="chat-window-message" type="text" autocomplete="off" placeholder="Type a message..." />
+                            <div class="waves-effect" id="send"><i class="material-icons">send</i></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side-menu">
+        <div class="waves-effect waves-light hamburger">
+            <svg class="ham ham2" viewBox="10 10 80 80" width="40" height="40">
+                <path class="line top" d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom" d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
+            </svg>
+        </div>
+        <div class="side-menu-items">
+            <div class="side-menu-div">
+                <ul>
+                    <li class="active"><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="../profile"><i class="material-icons left">person</i>Profile</a></li>
+                    <li><a href="#!" id="addGroup" data-target="addGroupModal" class="modal-trigger"><i class="material-icons left">group_add</i>Create Group</a></li>
+                    <li><a href="#!"><i class="material-icons left">wallpaper</i>Wallpaper</a></li>
+                    <li><a href="../games"><i class="material-icons left">videogame_asset</i>Games</a></li>
+                    <li><a href="#!" onclick="toggleDarkMode()"><i class="material-icons left">brightness_4</i>DarkMode</a></li>
+                    <li><a href="#!" onclick="logout()"><i class="material-icons left">exit_to_app</i>LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="addGroupModal" class="modal">
+    <div class="modal-content">
+        <h4>Add Group</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="group_name" type="text" class="validate">
+                <label class="active" for="group_name">Group Name</label>
+                <span class="helper-text" data-error="Please enter a valid name" data-success="Valid &check;"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="waves-effect waves-green btn-flat" id="addGroupSubmit">Add</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../assets/libraries/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/anime/anime.min.js"></script>
+<script type="text/javascript" src="../assets/libraries/crypto/crypto-js.min.js"></script>
+<script type="text/javascript" src="../assets/js/side-menu.js"></script>
+<script type="text/javascript" src="../assets/js/logout.js"></script>
+<script type="text/javascript" src="../assets/js/dark-mode.js"></script>
+<script type="text/javascript" src="../assets/js/get_days.js"></script>
+<script type="text/javascript" src="../assets/js/get_12_hr.js"></script>
+<script type="text/javascript" src="../assets/js/get_24_hr.js"></script>
+<script type="text/javascript" src="../assets/js/chat/chat.js?v2"></script>
+
+</body>
+</html>

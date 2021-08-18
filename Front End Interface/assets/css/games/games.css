@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css?family=Noto+Sans";
+
+body{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+}
+#main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    transform: translate(0,0);
+}
+nav+div{
+    flex: 1;
+}
+#main>.section{
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: auto;
+}
+#main .button_section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.nav-header{
+    z-index: 9;
+}
+
+nav .brand-logo, nav ul {
+    display: flex!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+.logo-letter:nth-child(1){
+    /*color: #66bb6a;*/
+    color: #69f0ae;
+}
+.logo-letter:nth-child(6){
+    /*color: #448aff;*/
+    color: #bbdefb;
+}
+.logo-letter:nth-child(11){
+    color: #fbc02d;
+}
+.postfix{
+    position: absolute;
+    top: calc(0.5rem - 5px);
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+}
+.button-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.button-container>button{
+    position: absolute;
+    width: max-content;
+}
+
+.button-container>button:nth-child(3){
+    top: calc(50px + 100%);
+    margin-bottom: 25px;
+}
+
+section.section{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+section.section .divider+span{
+    background: white;
+    padding: 0 10px;
+    border-radius: 1000px;
+    border: 1px solid;
+    z-index: -1;
+    position: relative;
+}
+section.section .divider{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 90%;
+    z-index: -2;
+}
+
+.card-image{
+    height: 250px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-action>a{
+    color: #0d47a1!important;
+}
+.card-action>a:hover{
+    color: #1565c0 !important;
+}
